@@ -1,10 +1,11 @@
 import React from 'react';
 import ForcastCard from '../ForcastCard/ForcastCard'
 import styled from 'styled-components';
-import Helpers from '../../Helpers/Index'
+import Helpers from '../../helpers'
 const Container = styled.div`
 display:flex;
-padding-top: 65px;
+padding-top: 20px;
+justify-content: center;
   @media (max-width: 768px) {
     overflow-x: scroll;
     display: flex;

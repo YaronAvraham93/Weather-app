@@ -4,7 +4,7 @@ import SearchBar from '../components/SearchBar/SearchBar';
 import Location from '../components/Location/Location';
 import Card from '../components/Card/Card';
 import ForecastList from '../components/ForecastList/ForecastList';
-import Helpers from '../Helpers/Index'
+import Helpers from '../helpers'
 import { getAutoCompleteList, get12HoursfHourly, getCurrentConditions, getDaliyForcast } from '../Api/index';
 import styled from 'styled-components';
 
@@ -52,12 +52,7 @@ export default function WeatherPage() {
     setpickLoction(v);
     setIsfinished(true)
   };
-  console.log('autoComplete  :',autoComplete);
-  console.log('selectValue   ',selectValue);
-  console.log('HoursfHourly12  :',HoursfHourly12);
-  console.log('CurrentConditions   ',CurrentConditions);
-  console.log('DaliyForcast  :',DaliyForcast);
-  console.log('pickLoction   ',pickLoction);
+ 
   return (
     <CweatherPage>
       <Typography color={'white'} label={'Weather-app'} />
