@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import WeatherPage from './pages/WeatherPage';
+import styled from 'styled-components';
+import image from './assets/images/homePagebj.jpg';
 
+const Container = styled.div`
+  background-image: url(${image});
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  @media  (max-width: 768px) {
+  flex-direction: column;
+  align-items:center;
+}
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Container>
+      <WeatherPage />
+    </Container>
+   
   );
 }
 
