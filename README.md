@@ -1,4 +1,4 @@
-![Screenshot (59)](https://user-images.githubusercontent.com/69208518/118178798-1f88dd00-b43d-11eb-88f3-08102718c710.png)
+
 # Weather App
 
 
@@ -20,7 +20,7 @@
 ~~ Runs ~~ the > app in the development mode.\
 
 
-![GitHub Logo](Screenshot(59).png
+![Screenshot (59)](https://user-images.githubusercontent.com/69208518/118178798-1f88dd00-b43d-11eb-88f3-08102718c710.png)
 Format: ![Alt Text](url)
 
 
