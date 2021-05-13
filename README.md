@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-1.About The Project
+***1.About The Project***
  Built With
 2.Getting Started
  Installation
