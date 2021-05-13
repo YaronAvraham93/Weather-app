@@ -17,18 +17,10 @@
 
 ### About The Project
 
-~~ Runs ~~ the > app in the development mode.\
-
-
 ![Screenshot (59)](https://user-images.githubusercontent.com/69208518/118178798-1f88dd00-b43d-11eb-88f3-08102718c710.png)
 Format: ![Alt Text](url)
 
+This app is an app to show current weather in chosen cities, daily conditions for current date and a forecast for 12 hours ahead.
+To use this app you just need to type in a city of your choice and choose the desired location from the autocomplete suggestions field.
 
-As Kanye West said:
-
-> We're living the future so
-> the present is our past.
-> 
-
-I think you should use an
-`<addr>` element here instead.
+#### Built With
