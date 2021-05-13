@@ -1,4 +1,4 @@
-### Getting Started with Create React App
+# Weather App
 
 
 
@@ -14,7 +14,7 @@
  
 3.Contact
 
-### `npm start`
+### About The Project
 
 ~~ Runs ~~ the > app in the development mode.\
 
