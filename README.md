@@ -6,11 +6,11 @@
 
 1.About The Project.
 
- - Built With
+ -  Built With
  
 2.Getting Started
 
- - Installation
+ -  Installation
  
 3.Contact
 
