@@ -44,7 +44,7 @@ background-color:whitesmoke;
 }`;
 const DropDwonListUl=styled.ul`
 display:none;
-width: 23vw;
+width: 23%;
 border-radius:10px;
 position:absolute;
 background-color:whitesmoke;

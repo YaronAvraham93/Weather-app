@@ -1,6 +1,6 @@
-import React from 'react';
+
 import Location from './Location';
-import { TypographySize } from '../../config/typography';
+import { TypographySize } from '../../enums/enums';
 
 export default {
   title: 'Container/Location',

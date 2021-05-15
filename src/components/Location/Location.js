@@ -1,5 +1,5 @@
 import React from 'react';
-import { TypographySize } from '../../config/typography';
+import { TypographySize } from '../../enums/enums';
 import styled from 'styled-components';
 
 
