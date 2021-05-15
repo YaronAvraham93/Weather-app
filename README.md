@@ -40,11 +40,11 @@ To get a local copy up and running follow these simple steps.
 
 2.Clone the repo
 
-    git clone https://github.com/barsh11/WeatherApp.git
+     https://github.com/barsh11/WeatherApp.git
 
 3.Install NPM packages.
 
-    git clone  npm install
+     npm install
 
 4.Enter your API in ``src/url/api.js``
 
