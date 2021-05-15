@@ -26,4 +26,6 @@ To use this app you just need to type in a city of your choice and choose the de
 
 #### Built With
 
-- [GitHub](http://github.com)
+- [Storybook](https://storybook.js.org/)
+- [React](https://reactjs.org/)
+- [Styled-Components](https://styled-components.com/)
