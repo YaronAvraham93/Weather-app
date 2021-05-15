@@ -25,3 +25,6 @@ This app is an app to show current weather in chosen cities, daily conditions fo
 To use this app you just need to type in a city of your choice and choose the desired location from the autocomplete suggestions field.
 
 #### Built With
+
+http://github.com - automatic!
+[GitHub](http://github.com)
