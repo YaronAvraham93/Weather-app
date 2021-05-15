@@ -37,7 +37,9 @@ To get a local copy up and running follow these simple steps.
 ## Installation
 
 1.Get a free API Key at https://developer.accuweather.com/
+
 2.Clone the repo
+
 ``
 git clone https://github.com/barsh11/WeatherApp.git
 ``
