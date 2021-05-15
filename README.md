@@ -47,8 +47,13 @@ To get a local copy up and running follow these simple steps.
     git clone  npm install
 
 4.Enter your API in ``src/url/api.js``
-``
-{
-   const API_KEY = 'ENTER YOUR API';
-   }
-``
+
+
+```dart
+import 'package:markdown/markdown.dart';
+
+void main() {
+  print(markdownToHtml('Hello *Markdown*'));
+  //=> <p>Hello <em>Markdown</em></p>
+}
+```
