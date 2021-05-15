@@ -26,5 +26,4 @@ To use this app you just need to type in a city of your choice and choose the de
 
 #### Built With
 
-http://github.com - automatic!
-[GitHub](http://github.com)
+- [GitHub](http://github.com)
