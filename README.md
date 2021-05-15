@@ -29,3 +29,9 @@ To use this app you just need to type in a city of your choice and choose the de
 - [Storybook](https://storybook.js.org/)
 - [React](https://reactjs.org/)
 - [Styled-Components](https://styled-components.com/)
+
+# Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+## Installation
