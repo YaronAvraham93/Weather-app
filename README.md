@@ -40,10 +40,8 @@ To get a local copy up and running follow these simple steps.
 
 2.Clone the repo
 
-``
-
     git clone https://github.com/barsh11/WeatherApp.git
-``
+
 
 
 git commit -am "By typing this command I am saving a collection of saved files."
