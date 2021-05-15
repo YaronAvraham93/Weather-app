@@ -44,9 +44,8 @@ To get a local copy up and running follow these simple steps.
 
 3.Install NPM packages.
 
-``
-   npm install
-``   
+   git clone npm install
+
 4.Enter your API in ``src/url/api.js``
 
 {
