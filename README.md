@@ -17,6 +17,8 @@
 
 ### About The Project
 
+Final Product:
+
 ![Screenshot (59)](https://user-images.githubusercontent.com/69208518/118178798-1f88dd00-b43d-11eb-88f3-08102718c710.png)
 
 This app is an app to show current weather in chosen cities, daily conditions for current date and a forecast for 12 hours ahead.
