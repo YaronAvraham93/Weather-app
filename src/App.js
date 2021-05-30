@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import image from './assets/images/homePagebj.jpg';
 
 const Container = styled.div`
-  background-image: url(${image});
-  width: 100vw;
+  background: url(${image}) center;
+  width: 98vw;
   height: 100vh;
   margin: 0;
   padding: 0;

@@ -1,7 +1,7 @@
 import React from 'react';
 import ForcastCard from '../ForcastCard/ForcastCard'
 import styled from 'styled-components';
-import Helpers from '../../Helpers/Index'
+import Helpers from '../../helpers/index'
 const Container = styled.div`
 display:flex;
 padding-top: 65px;

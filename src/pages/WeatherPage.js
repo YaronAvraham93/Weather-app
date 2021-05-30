@@ -4,7 +4,7 @@ import SearchBar from '../components/SearchBar/SearchBar';
 import Location from '../components/Location/Location';
 import Card from '../components/Card/Card';
 import ForecastList from '../components/ForecastList/ForecastList';
-import Helpers from '../Helpers/Index'
+import Helpers from '../helpers/index'
 import { getAutoCompleteList, get12HoursfHourly, getCurrentConditions, getDaliyForcast } from '../Api/index';
 import styled from 'styled-components';
 

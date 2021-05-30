@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import TextLine from '../TextLine/TextLine'
 import Icon from '../WeatherIcon/Icon'
-import Helpers from '../../Helpers/Index'
+import Helpers from '../../helpers/index'
 
 const CardTemp = styled.div`
 
