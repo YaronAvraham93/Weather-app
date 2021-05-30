@@ -5,122 +5,126 @@ import Icon from '../WeatherIcon/Icon'
 import Helpers from '../../helpers/index'
 
 const CardTemp = styled.div`
-
- opacity: 0.4;
-    border-radius: 0.85rem;
-    background-color: ivory;
-    color: #000000;
-    font-weight: bold;
-    height: 25vh;
-    width: 45vw;
-    text-align: center;
-    display: flex;
-    justify-content:space-around;
-    padding-top: 15px;
+  opacity: 0.4;
+  border-radius: 0.85rem;
+  background-color: ivory;
+  color: #000000;
+  font-weight: bold;
+  width: 45%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
   @media (max-width: 768px) {
-    width: 88vw;
-    height: 20vh;
+    width: 88%;
+    height: 20%;
     margin: 0;
   }
 `;
 const Container = styled.div`
- margin-top:10px;
-       display: flex;
-    width: 100vw;
-    height: 40vh;
-    flex-direction: row;
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  height: 40%;
+  flex-direction: row;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
- 
-margin:0;
-}`;
 
-const DivOne = styled.div`
-    Height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-`;
-const DivTwo = styled.div`
- Height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-`;
-const DivThree = styled.div`
-  Height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 5vw;
+    margin: 0;
+  }
 `;
 
-const Wrap=styled.div`
-    width: 50vw;
-    display: flex;
-    color:white;
-    justify-content: center;
-    padding-top: 40px;
-    @media (max-width: 768px) {
-padding:0;
-}`;
-const WrapTwo=styled.div`
-display:block;
-height:20vh;
+const SLowHight = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 `;
-export default function Card({CurrentConditions,DaliyForcast}) {
- let rise=( DaliyForcast.DailyForecasts[0]?.Sun.Rise).slice(11,16)
- let set=( DaliyForcast.DailyForecasts[0]?.Sun.Set).slice(11,16)
+const SRainWind = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+`;
+const SSetRise = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+`;
+
+const Wrap = styled.div`
+  width: 50%;
+  height:1%;
+  display: flex;
+  color: white;
+  justify-content: center;
+  padding-top: 40px;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+`;
+const WrapTwo = styled.div`
+  display: block;
+  height: 20%;
+`;
+const Sunset = styled.div`
+`;
+const Sunrise = styled.div`
+`;
+const Low = styled.div`
+`;
+const Wind = styled.div`
+`;
+const Rain = styled.div`
+`;
+const Hight=styled.div``;
+export default function Card({ CurrentConditions, DaliyForcast }) {
+  const rise = (DaliyForcast.DailyForecasts[0]?.Sun.Rise).slice(11, 16);
+  const set = (DaliyForcast.DailyForecasts[0]?.Sun.Set).slice(11, 16);
   return (
-  
     <Container>
-       <Wrap> 
-      <Icon
-    src={Helpers.GetIcon( CurrentConditions.WeatherIcon)}
-    width={'20vw'}
-    height={'20vh'}
-    />
-    <WrapTwo> 
-    <TextLine
-    text={CurrentConditions.Temperature?.Metric.Value}
-    fontsize={'large'}
-    degree
-    /> 
-    <TextLine
-    fontsize={'medium'}
-    height={'10vh'}
-    text= {CurrentConditions.WeatherText}
-    />
-
-    </WrapTwo>
-    </Wrap>
+      <Wrap>
+        <Icon src={Helpers.GetIcon(CurrentConditions.WeatherIcon)} width={'37%'} height={'37%'} />
+        <WrapTwo>
+          <TextLine text={CurrentConditions.Temperature?.Metric.Value} fontsize={'large'} degree />
+          <TextLine fontsize={'medium'} height={'20%'} text={CurrentConditions.WeatherText} />
+        </WrapTwo>
+      </Wrap>
 
       <CardTemp>
-        <DivOne>
-          <TextLine text={DaliyForcast.DailyForecasts[0]?.Temperature.Maximum.Value}   degree />
+        <SLowHight>
+          <Hight>  
+          <TextLine text={DaliyForcast.DailyForecasts[0]?.Temperature.Maximum.Value} degree />
           <TextLine text={'Hight'} />
-          <TextLine  text={DaliyForcast.DailyForecasts[0]?.Temperature.Minimum.Value}   degree />
-          <TextLine text={'Low'}/>
-        </DivOne>
+          </Hight>
+          <Low>
+          <TextLine text={DaliyForcast.DailyForecasts[0]?.Temperature.Minimum.Value} degree />
+          <TextLine text={'Low'} />
+          </Low>
+        </SLowHight>
 
-        <DivTwo>
-          <TextLine text={`${DaliyForcast.DailyForecasts[0].Day.Wind.Speed.Value} mi/h`}  />
+        <SRainWind>
+          <Wind>  
+          <TextLine text={`${DaliyForcast.DailyForecasts[0].Day.Wind.Speed.Value} mi/h`} />
           <TextLine text={'Wind'} />
-          <TextLine text={`${DaliyForcast.DailyForecasts[0]?.Day.RainProbability } % `}/>
+          </Wind>
+          <Rain> 
+          <TextLine text={`${DaliyForcast.DailyForecasts[0]?.Day.RainProbability} % `} />
           <TextLine text={'Rain'} />
-        </DivTwo>
+          </Rain>
+        </SRainWind>
 
-        <DivThree>
+        <SSetRise>
+          <Sunrise> 
           <TextLine text={rise} />
           <TextLine text={'Sunrise'} />
-          <TextLine text={set}/>
+          </Sunrise>
+          <Sunset>  
+          <TextLine text={set} />
           <TextLine text={'Sunset'} />
-        </DivThree>
+          </Sunset>
+        </SSetRise>
       </CardTemp>
-  
     </Container>
-   
   );
 }

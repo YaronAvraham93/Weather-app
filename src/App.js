@@ -1,5 +1,5 @@
 import React from 'react';
-import WeatherPage from './pages/WeatherPage';
+import HomePage from './page/HomePage';
 import styled from 'styled-components';
 import image from './assets/images/homePagebj.jpg';
 
@@ -19,7 +19,7 @@ function App() {
   return (
 
     <Container>
-      <WeatherPage />
+      <HomePage />
     </Container>
    
   );

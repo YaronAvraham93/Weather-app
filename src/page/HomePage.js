@@ -52,12 +52,7 @@ export default function WeatherPage() {
     setpickLoction(v);
     setIsfinished(true)
   };
-  console.log('autoComplete  :',autoComplete);
-  console.log('selectValue   ',selectValue);
-  console.log('HoursfHourly12  :',HoursfHourly12);
-  console.log('CurrentConditions   ',CurrentConditions);
-  console.log('DaliyForcast  :',DaliyForcast);
-  console.log('pickLoction   ',pickLoction);
+ 
   return (
     <CweatherPage>
       <Typography color={'white'} label={'Weather-app'} />
